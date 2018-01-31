@@ -53,6 +53,7 @@ app.use(function(err, req, res, next) {
 app.listen(app.get('port'), () => {
   console.log('App is running at http://localhost:%d in %s mode', app.get('port'), app.get('env'));
   console.log('Press ctrl-c to quit');
+  console.log('beep boop\n');
 });
 
 module.exports = app;
