@@ -5,9 +5,10 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     .container
-      .header sup
-      .nav with
-      .content it
-      .footer vanilla face
+      include partials/header
+      include partials/nav
+      .content 
+        block content
+      include partials/footer
 
     
