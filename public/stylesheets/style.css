@@ -1,16 +1,48 @@
+/*
+  #2B3A42 - dark grey blue
+  #3F5765 - lighter grey blue
+  #BDD4DE - light blue
+  #EFEFEF - white
+  #FF530D - red
+  #555 - text color
+*/
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  padding: 0.5em 0em;
+  color: #555;
+  background-color: #EFEFEF;
 }
 
 a {
-  color: #00B7FF;
+  color: ##FF530D;;
+}
+
+ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.fa-home, .fa-beer, .fa-twitter{
+  color: #FF530D;
+  margin-right: 0.75em;
+}
+
+
+ul.nav-list li{
+  margin: 1em 0;
 }
 
 .container{
   display: grid;
   margin: 0;
   padding: 0;
-  grid-gap: 10px;
+  grid-gap: 0px;
 
   grid-template-areas:
     "header header"
@@ -19,30 +51,28 @@ a {
 
   grid-template-rows: 0.5fr 7fr 0.5fr;
   grid-template-columns: 0.5fr 7fr;
-  background-color: lightgray;
   height: 100vh;
 }
 
 .header{
   grid-area: header;
-  border: 1px solid black;
-  padding: 5px;
+  background-color: #2B3A42;
+  padding: 10px;
 }
 
 .footer{
   grid-area: footer;
-  border: 1px solid black;
-  padding: 5px;
+  padding: 10px;
+  background-color: #2B3A42;
 }
 
 .nav{
   grid-area: nav;
-  border: 1px solid blue;
-  padding: 5px;
+  padding: 10px;
+  background-color: #2B3A42;
 }
 
 .content{
   grid-area: content;
-  border: 1px solid red;
-  padding: 5px;
+  padding: 10px;
 }
